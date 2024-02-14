@@ -1,0 +1,184 @@
+:root {
+  --navColor: #4c4444 /*Soft Black*/;
+  --logoColor: #14a800 /*The Green*/;
+  --boxOneColor: #e0e0e0 /*Light Gray*/;
+  --boxTwoColor: #6eda44 /*Neon Green*/;
+  --boxThreeColor: #018324 /*Spring Forest Green*/;
+  --accentColor: #4c4444 /*Soft Black*/;
+}
+
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.logo {
+  width: 450px;
+  fill: #14a800;
+}
+
+.navLogo {
+  display: none;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0rem !important;
+  padding-right: 350px;
+}
+
+nav {
+  background-color: var(--navColor);
+}
+
+.siteContainer {
+  max-width: 1200px;
+}
+
+.pricingLink {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-left: -15px;
+}
+
+a {
+  color: var(--logoColor);
+}
+
+.btn-primary {
+  background-color: var(--logoColor);
+  border-color: var(--logoColor);
+}
+
+.boxOneColor,
+.boxFourColor {
+  background-color: var(--boxOneColor);
+}
+
+.boxTwoColor,
+.senderIconcircle {
+  background-color: var(--boxTwoColor);
+}
+
+.boxThreeColor,
+.receiverIconcircle {
+  background-color: var(--boxThreeColor);
+}
+
+.row2 h2 {
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.box2,
+.box3 {
+  position: relative;
+}
+
+.instructions-ol {
+  padding-left: 80px;
+}
+
+.senderIconcircle,
+.receiverIconcircle {
+  border: 4px solid #fff;
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.senderIcon {
+  width: 80px;
+}
+
+#billing_modal .modal-footer .btn {
+  width: 400px;
+}
+
+@media only screen and (min-width: 1200px) {
+  #faqs_modal .modal-content {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-footer .btn {
+    width: 200px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navLogo {
+    display: inline-block;
+    width: 270px !important;
+    padding-left: 30px;
+  }
+
+  .navbar {
+    padding: 0px !important;
+  }
+
+  .navbar.bg-dark {
+    background-color: white !important;
+  }
+  .navbar-toggler-icon {
+    background-color: #343a40; /* Set the button color to dark */
+  }
+
+  .btnBg,
+  .navbar-nav {
+    background-color: #212529;
+    padding: 20px;
+  }
+
+  .navbar-nav {
+    padding-left: 50px;
+  }
+
+  .g-4,
+  .gx-4,
+  .g-3,
+  .gx-3 {
+    --bs-gutter-x: 0rem !important;
+  }
+
+  .container {
+    --bs-gutter-x: 0rem;
+    margin-top: 25px;
+  }
+
+  .container-fluid {
+    --bs-gutter-x: 0;
+  }
+
+  .col-sm-11 {
+    margin-right: 40px;
+    margin-bottom: 30px;
+  }
+
+  .faxInfo {
+    margin-left: 30px;
+  }
+
+  .welcome-ol,
+  .instructions-ol {
+    padding-left: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .instructions-ol h3 {
+    padding-left: 20px;
+  }
+}
