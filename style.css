@@ -7,6 +7,8 @@
   --accentColor: #4c4444 /*Soft Black*/;
 }
 
+html, body {width: auto!important; overflow-x: hidden!important} 
+
 body {
   padding-top: 70px;
   padding-bottom: 30px;
