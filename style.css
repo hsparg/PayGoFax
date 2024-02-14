@@ -117,6 +117,12 @@ ul {
     width: 200px;
   }
 
+  .modal-footer {
+    flex: display;
+    justify-content: center;
+    align-items: center;
+  }
+
   .logo {
     display: none;
   }
