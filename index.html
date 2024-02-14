@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="PayGoFax is a non-subscription, pay as you go internet fax application that allows customers to send faxes from their computer or mobile phone to a fax number. The first 2 pages of any PDF is free - no CC required.">
+<meta name="keywords" content="free fax, pay as you go fax, pay-as-you-go fax, faxing facsimile, fax machine, internet fax, secure fax, hipaa fax, pay as you go fax, fax from my computer, fax from my phone, PDF Fax">
+<meta name="google-site-verification" content="MGpukJSvt_XWD-4scdkvxVOhiGVdek8FYdSo9wPy1pM" />
+<link rel="icon" href="./icons/airplaneIcon.ico" width="32px" height="32px">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PayGoFax</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+<body>
+    
+<!-- Fixed Nav Bar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid d-flex ">
+        <a class="navbar-brand" href="#">
+            <img
+                class="navLogo img-fluid"
+                src="./icons/paygofaxlogo.svg"
+                alt="PayGoFax Logo - Your Descriptive Alt Text Here"
+                style="width: 150px; height: auto;" 
+            />
+        </a>
+        <div class="btnBg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button></div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#pricing_modal">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#faqs_modal">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contact_modal">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- /End of Fixed Nav Bar -->
+
+
+
+
+
+    <div class="container siteContainer">
+    <!-- LOGO -->    
+    <img
+    class="logo mb-5 ms-2 mt-5 img-fluid"
+    src="./icons/paygofaxlogo.svg"
+    alt="PayGoFax Logo"
+  />
+    <!-- /LOGO -->
+
+
+
+
+    <!-- Row One -->
+    <div class="container g-4">
+      <div class="boxOneColor shadow-sm pt-5 pb-5 ">
+        <div class="row">
+          <div class="welcome-ol col-xs-7 col-sm-6  ps-xs-5 d-flex flex-column align-items-center">
+            
+            <ol class=" mt-5 mb-5">
+              <li>No fax machine?</li>
+              <li>Have an occasional or one time fax?</li>
+              <li>Don't want to pay for a fax line &amp; service?</li>
+              <li>Need to send a fax quick and secure?</li>
+              <li>Need confirmation that your fax transmitted OK?</li>
+              <li><strong>PayGoFax.com</strong> is here for you!</li>
+            </ol>
+          </div>
+
+          <div class="col-sm-6 col-xs-12 instructions-ol" >
+            <h3 class="mb-3" >Instructions:</h3>
+            <ol class="mb-5">
+              <li>
+                Complete fax form below<br />(from a desktop or mobile browser).
+              </li>
+              <li>Upload (in order) up to 3 documents to fax.</li>
+              <li>Click Send Fax!</li>
+              <li>Input credit card information.</li>
+              <li>Confirmation will be sent to Sender's Email.</li>
+              <li class="pricingLink"><strong><a href="#" class="a-link" data-bs-toggle="modal" data-bs-target="#pricing_modal">See Pricing HERE</a></strong></li>
+            </ol>
+
+            
+              
+             
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---- /END OF ROW 1 ---->
+
+
+
+
+
+    <!---- ROW 2 ---->
+    <div class="container mt-3">
+      <div class="row row2 align-items-start g-3 justify-content-center">
+        <!-- BOX 2 -->
+        <div class="box2 col-sm-6 col-md-6 col-lg-6 col-sm-12">
+          <div class="text-center boxTwoColor">
+            <div class="senderIconcircle">
+              <img
+                class="senderIcon"
+                src="./icons/sendFax.svg"
+                alt="Send a Fax"
+                width="100px"
+                height="100px"
+              />
+            </div>
+            <h2 style="padding: 100px 0px 50px 0px">Sender Information</h2>
+
+            <div class="form-group d-flex flex-column align-items-center">
+              <div class="col-xs-12 col-8 mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sender_name"
+                  name="sender_name"
+                  placeholder="First Name & Last Name"
+                />
+              </div>
+
+              <div class="col-xs-12 col-8 mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sender_company"
+                  name="sender_company"
+                  placeholder="Company (optional)"
+                />
+              </div>
+
+              <div class="col-xs-12 col-8 mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sender_email"
+                  name="sender_email"
+                  placeholder="Email (confirmation sent here)"
+                />
+              </div>
+
+              <div class="col-xs-12 col-8 mb-5 pb-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sender_phone"
+                  name="sender_phone"
+                  placeholder="Phone (optional)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /END OF BOX 2 -->
+
+        <!-- BOX 3 -->
+        <div class="box3 col-sm-6 col-md-6 col-lg-6 col-sm-12">
+          <div class="boxThreeColor text-center">
+            <div class="receiverIconcircle">
+              <img
+                class="senderIcon"
+                src="./icons/recieveFax.svg"
+                alt="Send a Fax"
+                width="110px"
+                height="100px"
+              />
+            </div>
+            <h2 style="padding: 100px 0px 50px 0px">Receiver Information</h2>
+            <div class="form-group d-flex flex-column align-items-center">
+              <div class="col-xs-12 col-8  mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sender_name"
+                  name="sender_name"
+                  placeholder="First Name & Last Name"
+                />
+              </div>
+
+              <div class="col-xs-12 col-8 mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sender_company"
+                  name="sender_company"
+                  placeholder="Company (optional)"
+                />
+              </div>
+
+              <div class="col-xs-12 col-8 mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sender_email"
+                  name="sender_email"
+                  placeholder="Email (confirmation sent here)"
+                />
+              </div>
+
+              <div class="col-xs-12 col-8 mb-5 pb-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sender_phone"
+                  name="sender_phone"
+                  placeholder="10-digit Fax Number"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /END OF BOX 3 -->
+      </div>
+    </div>
+    <!---- /END OF ROW 2 ---->
+
+    <!---- ROW 3 ---->
+    <div class="container mt-3 overflow-hidden">
+      <div class="boxFourColor shadow-sm pt-5 pb-5">
+        <div class="row g-3">
+          <div class="col-sm-12">
+            <div class="col-sm-12">
+              <h2 class="faxInfo mb-4 ps-sm-5">Fax Information</h2>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 ps-5 pe-3">
+                <div class="col-sm-11 ">
+                  <textarea
+                    class="form-control"
+                    id="cover_page_text"
+                    name="cover_page_text"
+                    rows="5"
+                    placeholder="Leave blank if you are attaching your own cover page."
+                  ></textarea>
+
+                </div>
+              </div>
+
+              <div class="col-sm-5 ps-5">
+                <h4>Attach the files you would like to fax here:</h4>
+                <div>
+                  <small
+                    >We support over 20 file types:
+                    <strong
+                      >.pdf .doc .tiff .jpg etc.<br />
+                      <a
+                        href="#"
+                        class="a-link"
+                        data-bs-toggle="modal" data-bs-target="#files_modal"
+                        >See Complete List</a
+                      ></strong
+                    ></small
+                  >
+                </div>
+                <div>
+                  <input
+                    class="a-link "
+                    style="margin: 7px 1px 1px 1px"
+                    type="file"
+                    id="file_1"
+                    name="file_1"
+                  />
+                  <input
+                    class="a-link"
+                    style="margin: 3px 1px 1px 1px"
+                    type="file"
+                    id="file_2"
+                    name="file_2"
+                  />
+                  <input
+                    class="a-link"
+                    style="margin: 3px 1px 1px 1px"
+                    type="file"
+                    id="file_3"
+                    name="file_3"
+                  />
+                </div>
+                <div style="margin-top: 8px" class="pb-4">
+                  <small
+                    >* Total combined file size cannot exceed
+                    <strong>20 MB</strong>.</small
+                  >
+                </div>
+              </div>
+
+
+              <div class="modal-footer d-flex flex-column align-items-center p-5">
+                <input type="hidden" id="cc_err_y_n" name="cc_err_y_n" value="N">
+                <div><a href="javascript:fax_form_submit2(); gtag_report_conversion();" class="a-link btn btn-dark col-sm-12 btn-lg" id="fax_form_submit_btn2">Send Fax</a></div>
+                </div>
+
+
+
+            </div>
+          </div>
+        </div></div>
+        <!---- /END OF ROW 3 ---->
+
+<!--footer-->
+        <div class="container">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-bs-toggle="modal" data-bs-target="#pricing_modal">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-bs-toggle="modal" data-bs-target="#faqs_modal">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-bs-toggle="modal" data-bs-target="#contact_modal">Contact Us</a></li>
+            </ul>
+            <p class="text-center text-muted">© Copyright 2024 PayGoFax.com</p>
+          </footer>
+        </div>
+       <!---- /END OF ROW 3 ---->
+
+
+
+
+<!-- Pricing Modal -->
+<div class="modal fade" id="pricing_modal" tabindex="-1" aria-labelledby="pricing_modal_title" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="pricing_modal_title">Pricing</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped table-condensed table-bordered">
+          <tr><td>1-5 pages</td><td>$1.99 + $0.20/page</td></tr>
+          <tr><td>6-20 pages</td><td>$1.99 + $0.15/page</td></tr>
+          <tr><td>21+ pages</td><td>$1.99 + $0.10/page</td></tr>
+        </table>
+    
+        <ul>
+          <li><small>"Cover page text" input in the form is NOT included in the page count. Only pages from uploaded file(s) are counted.</small></li>
+          <li><small>Your CC will be authorized prior to sending the fax, but NOT charged.</small></li>
+          <li><small>Upon a SUCCESSFUL fax transmission, if applicable, your CC will be charged and a fax confirmation and billing receipt will be sent the email provided in Sender Information.</small></li>
+        </ul>
+    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /END of Pricing Modal -->
+
+
+
+<!-- FAQs Modal -->
+<div class=" modal fade" id="faqs_modal" tabindex="-1" aria-labelledby="faqs_modal_title" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="faqs_modal_title">FAQs</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p><strong>Q: What is PayGoFax.com?</strong></p>
+          <p>A: PayGoFax.com is a simple pay-as-you-go way to send a "one-off" fax.  Because how often do you actually send a fax? We have no monthly fees or setup fees.  We simply send 1 fax at a time for your occasional fax needs.</p>
+          <br />
+          <p><strong>Q: How do I know if my fax was delivered?</strong></p>
+          <p>A: Upon a successful fax transmission, Fax One Off will send a receipt confirming the fax went through, the number of pages and associated charges.  Please check your junk or spam folders if you do see it in your inbox.</p>
+          <br />
+          <p><strong>Q: Is Paygo Fax secure and private.</strong></p>
+          <p>A: Yes, all faxes are transmitted over SSL and TLS 1.2.  Our server has also been given an "A" security rating from ssllabs.com.</p>
+          <br />
+          <p><strong>Q: Can I fax from my cell phone?</strong></p>
+          <p>A: Yes, from your mobile browser you can fax.  This makes it convenient, if you are faxing pictures of signed documents.</p>
+          <br />
+          <p><strong>Q: Can I send an international fax?</strong></p>
+          <p>A: Currently we support sending <strong>TO</strong> U.S. and Canadian fax numbers. However, you can use our website from anywhere in the world.</p>
+          <br />
+          <p><strong>Q: Are you HIPAA (Health Insurance Portability and Accountability Act of 1996) compliant?</strong>
+          </p>
+          <p>A: Yes, all faxes are sent in an encrypted secure manner meeting HIPAA standards.  Faxes are stored in an encrypted format for a short period of time to ensure delivery then deleted off the server.</p>
+          <br />
+          <p><strong>Q: What is the largest fax I can send?</strong></p>
+          <p>A: Total combined uploaded file size must be less than 20 MBs.  However this could still be well over a several hundred pages depending on the file type.  We recommend not sending more than 100 pages at a single time to ensure a successful transmission.</p><br />      
+        </div>
+    
+     
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div> 
+    </div>
+    </div>
+  </div>
+</div>
+<!-- /END of FAQs Modal -->
+
+
+<!-- FAQs Modal -->
+<div class=" modal fade" id="faqs_modal" tabindex="-1" aria-labelledby="faqs_modal_title" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="faqs_modal_title">FAQs</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+     
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div> 
+    </div>
+    </div>
+  </div>
+</div>
+<!-- /END of FAQs Modal -->
+
+<!-- Contact Modal -->
+<div class=" modal fade" id="contact_modal" tabindex="-1" aria-labelledby="contact_modal_title" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="contact_modal_title">Contact Us</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="contact_us_modal_body">
+      	
+        <p class="text-center">Email us at:</p>
+
+        <p class="text-center img-responsive"> <a href="support@paygofax.com">support@paygofax.com</a></p>
+        
+        <p class="text-center">Please read our <a href="#" data-toggle="modal" data-target="#faqs_modal">FAQs</a> before e-mailing support. Thank you.</p>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div> 
+    </div>
+    </div>
+  </div>
+</div>
+<!-- /END of Contact Modal -->
+
+<!-- Files Modal -->
+<div class=" modal fade" id="files_modal" tabindex="-1" aria-labelledby="files_modal_title" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="files_modal_title">Supported File Types</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="files_modal_body">
+        <ul>
+                <li>Adobe PDF (.pdf)</li>
+                <li>Adobe PostScript (.ps)</li>
+                <li>Microsoft Word (.doc)</li>
+                <li>Microsoft Word Template (.dot)</li>
+                <li>Microsoft Word 2007+ (.docx)</li>
+                <li>Microsoft Word 2007+ Template (.dotx)</li>
+                <li>Microsoft Works (.wps)</li>
+                <li>Rich Text (.rtf)</li>
+                <li>Microsoft Excel (.xls)</li>
+                <li>Microsoft Excel 2007+ (.xlsx)</li>
+                <li>Microsoft Powerpoint (.ppt)</li>
+                <li>Microsoft Powerpoint 2007+ (.pptx)</li>
+                <li>OpenOffice Writer Document (.odt)</li>
+                <li>OpenOffice Calc Spreadsheet (.ods)</li>
+                <li>WordPerfect (.wpd)</li>
+                <li>Comma-separated CSV (.csv)</li>
+                <li>HTML (.htm, .html)</li>
+                <li>TIFF Image (.tif, .tiff)</li>
+                <li>JPEG Image (.jpg, .jpeg)</li>
+                <li>Bitmap Image (.bmp)</li>
+                <li>GIF Image (.gif)</li>
+                <li>PNG Image (.png)</li>
+                <li>Plain Text (.txt)</li>
+                <li>HP Printer Control Language (.pcl)</li>
+        </ul>
+          </div>
+     
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div> 
+    </div>
+    </div>
+  </div>
+</div>
+<!-- /END of Files Modal -->
+
+
+
+<!-- Billing Modal -->
+<div class=" modal fade" id="billing_modal" tabindex="-1" aria-labelledby="billing_modal_title" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="billing_modal_title">Billing Info</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="alert alert-info text-center" id="billing_alert">
+        Please enter your Billing Info and click <strong>Send Fax</strong> below.
+      </div>
+      
+    
+      
+      <div class=" ms-5 me-5 ">
+        <div class="form-group mb-3">
+          <div class="row d-flex flex-row align-items-center justify-content-center">
+                    <label for="cc_name_on_card" class=" control-label">Name On Card</label>
+                    <div>
+                        <input type="text" class=" req_form_field form-control" id="cc_name_on_card" name="cc_name_on_card">
+                      </div>
+                </div>
+           </div>     
+                <div class="form-group mb-3">
+                    <label for="cc_number" class=" control-label">Credit Card Number</label>
+                    <div class="">
+                        <input type="text" class="form-control" id="cc_number" name="cc_number">
+                    </div>
+                </div>
+                
+          
+                <div class="form-group mb-3">
+                    <label for="cc_exp_mm" class=" control-label">Expiration Month</label>
+                    <div class="">
+                        <select class="req_form_field form-control" id="cc_exp_mm" name="cc_exp_mm">
+                            <option value="">Select Month</option>
+                            <option value="01" >01 - January</option>
+                            <option value="02" >02 - February</option>
+                            <option value="03" >03 - March</option>
+                            <option value="04" >04 - April</option>
+                            <option value="05" >05 - May</option>
+                            <option value="06" >06 - June</option>
+                            <option value="07" >07 - July</option>
+                            <option value="08" >08 - August</option>
+                            <option value="09" >09 - September</option>
+                            <option value="10" >10 - October</option>
+                            <option value="11" >11 - November</option>
+                            <option value="12" >12 - December</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label for="cc_exp_yyyy" class=" control-label">Expiration Year</label>
+                    <div class="">
+                        <select class="form-control" id="cc_exp_yyyy" name="cc_exp_yyyy">
+                        <option value="">Select Year</option>                    
+                        <option value='2024'>2024</option><option value='2025'>2025</option><option value='2026'>2026</option><option value='2027'>2027</option><option value='2028'>2028</option><option value='2029'>2029</option><option value='2030'>2030</option><option value='2031'>2031</option>                        </select>
+                    </div>
+                </div>
+        
+                <div class="form-group mb-3">
+                    <label for="cc_zip" class="control-label">CC Billing ZIP</label>
+                    <div class="">
+                        <input type="text" class="form-control" id="cc_zip" name="cc_zip">
+                    </div>
+                </div>
+                
+                <div class="form-group mb-4">
+                    <label for="cc_ccv" class="control-label">
+                    CVV <a data-toggle="tooltip" data-placement="top" title="For Visa, MasterCard, 
+                    and Discover cards, the CVV (Card Verification Value) is the last 3 digit number located on the back of your card on or above your signature line.
+                    For an American Express card, it is the 4 digits on the FRONT above the end of your card number."><i class="fa fa-question-circle" aria-hidden="true"></i></a>               
+                    </label>
+                    <div class="">
+                        <input type="text" class="form-control" id="cc_ccv" name="cc_ccv">
+                    </div>
+                </div>
+        
+        <div class="mb-4"><img src="icons/cc_logo.png" class="img-responsive" alt="cards accepted" /></div>
+        
+    
+      
+      </div>
+      
+    
+     
+      <div class="modal-footer d-flex align-items-center justify-content-center">
+        <input type="hidden" id="cc_err_y_n" name="cc_err_y_n" value="N">
+        <div style="margin: 0px 40px; "><a href="javascript:fax_form_submit2(); gtag_report_conversion();" class="a-link btn btn-primary"  id="fax_form_submit_btn2">Send Fax</a></div>
+      </div> 
+    </div>
+    </div>
+  </div>
+</div></div>
+<!-- /END of Billing Modal -->
+
+
+
+
+
+
+
+        <!--- JAVASCRIPT --->
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script>
+
+        </script>
+      </div>
+    </div>
+    
+  </body>
+</html>
+</div>
